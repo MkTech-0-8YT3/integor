@@ -1,0 +1,13 @@
+server:
+  port: 10001
+
+config:
+  cache:
+    expiration: 600 # 10 minutes cache expiration (lack of db)
+
+services:
+  file-resolver:
+    address: "http://127.0.0.1:10002"
+  integrity-validator:
+    address: "http://127.0.0.1:10003"
+
